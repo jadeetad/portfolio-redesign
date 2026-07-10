@@ -23,6 +23,7 @@ export default function Projects() {
         <ProjectCard
           tag="Mobile"
           title="Laptop Harbor — E-Commerce Platform for Laptops"
+          link="https://laptopharbor-flutter-le6p.vercel.app/"
           description="E-commerce app for laptops of all types, covering product browsing through a full purchase flow."
           tools="Flutter"
         />
@@ -30,7 +31,7 @@ export default function Projects() {
           tag="Collaboration"
           title="EventSphere — UI/UX Design Collaboration"
           description="Collaborated with a small team designing a modern event discovery platform — research, Figma wireframes, layout systems, and user flow decisions."
-          tools="Figma · HTML · CSS · JavaScript"
+          tools="Figma"
         />
       </div>
     </section>
