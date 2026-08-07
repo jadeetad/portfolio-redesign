@@ -9,7 +9,7 @@ export default function Projects() {
           tag="Featured"
           featured
           title="KANSŌ (感想) — AI-Powered Reflective Writing Companion"
-          link="https://kansoreflections.lovable.app"
+          link="https://kanso-reflections-nine.vercel.app/"
           description="A full-stack reflective writing app that returns literary observations on what you've written, rather than advice — with a custom writing interface and distinct visual identity."
           tools="Next.js · Drizzle ORM · Better Auth · Upstash Redis · Claude API / Gemini API"
         />
