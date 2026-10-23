@@ -110,27 +110,6 @@ section + section {
   z-index: -1;
 }
 
-.eyebrow-line {
-  font-family: var(--mono);
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-bottom: 18px;
-}
-
-.eyebrow-line .cursor {
-  display: inline-block;
-  width: 8px;
-  height: 1em;
-  background: var(--terracotta);
-  margin-left: 3px;
-  vertical-align: -2px;
-  animation: blink 1.1s steps(1) infinite;
-}
-
-@keyframes blink {
-  50% { opacity: 0; }
-}
-
 .hero-text h1 {
   font-family: var(--display);
   font-size: clamp(2.4rem, 5.6vw, 4rem);
@@ -350,14 +329,63 @@ section + section {
   margin: 8px 0 12px;
 }
 
-.project-card h3 a {
-  border-bottom: 1px solid transparent;
-  transition: color 0.25s, border-color 0.25s;
+/* Clickable cards: whole card is a link */
+a.project-card {
+  display: block;
+  color: inherit;
+  cursor: pointer;
 }
 
-.project-card h3 a:hover {
+.project-card.is-link:hover,
+.project-card.is-link:focus-visible {
+  transform: translateY(-6px);
+  border-color: rgba(184, 120, 194, 0.7);
+  box-shadow: 0 14px 34px rgba(93, 60, 100, 0.45);
+}
+
+.project-card.is-link:focus-visible {
+  outline: 2px solid var(--plum-bright);
+  outline-offset: 3px;
+}
+
+.project-card.is-link:hover h3 {
   color: var(--plum-bright);
+}
+
+.project-card .tools {
+  margin-bottom: 18px;
+}
+
+.project-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--cream);
+  padding: 7px 14px;
+  border: 1px solid rgba(184, 120, 194, 0.45);
+  border-radius: 999px;
+  background: rgba(93, 60, 100, 0.25);
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+
+.project-cta .arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.project-card.is-link:hover .project-cta,
+.project-card.is-link:focus-visible .project-cta {
+  background: var(--plum);
   border-color: var(--plum-bright);
+}
+
+.project-card.is-link:hover .arrow,
+.project-card.is-link:focus-visible .arrow {
+  transform: translate(2px, -2px);
 }
 
 .project-card p.desc {
@@ -506,4 +534,14 @@ footer .line {
   .project-card {
     flex-basis: auto;
   }
+}
+
+/* --- Project card layout fixes --- */
+.project-card { display: flex; flex-direction: column; }
+a.project-card { display: flex; }
+.project-card.featured { flex-basis: 460px; }
+.project-cta { margin-top: auto; align-self: flex-start; }
+@media (max-width: 700px) {
+  .project-card,
+  .project-card.featured { flex-basis: auto; }
 }

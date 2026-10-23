@@ -6,12 +6,16 @@ export default function Skills() {
       <h2 className="section-title">Core Skills</h2>
       <div className="skills-grid">
         <SkillGroup
+          title="Full-Stack & Backend"
+          items={["Next.js (App Router), Drizzle ORM, Better Auth", "API Route Design, Upstash Redis", "Third-Party API Integration"]}
+        />
+        <SkillGroup
           title="Frontend Development"
           items={["HTML, CSS, JavaScript, React, Next.js", "Responsive & Mobile-First Design", "Modern UI Layouts"]}
         />
         <SkillGroup
-          title="Full-Stack & Backend"
-          items={["Next.js (App Router), Drizzle ORM, Better Auth", "API Route Design", "Claude API / Gemini API Integration"]}
+          title="AI & Machine Learning"
+          items={["Random Forest classification, scikit-learn", "Model-serving APIs (Flask)", "LLM integration — Claude API / Gemini API"]}
         />
         <SkillGroup
           title="UI/UX & Product Design"

@@ -10,13 +10,8 @@ export default function Hero() {
       </div>
 
       <div className="hero-text">
-        <div className="eyebrow-line">
-          frontend.dev()<span className="cursor"></span>
-        </div>
         <h1>Oghenekevwe Jade Etaduovie</h1>
-        <h3>
-          Frontend Developer Intern · UI/UX Design Intern · Full-Stack Product Builder
-        </h3>
+        <h3>Full-Stack Software Developer · AI/ML · UI/UX Design</h3>
         <div className="contact-line">
           <a href="mailto:jadeetad@jadeetad.com">jadeetad@jadeetad.com</a>
           <span className="sep">|</span>
@@ -36,19 +31,21 @@ export default function Hero() {
         </div>
 
         <p className="hero-about">
-          A focused and forward-thinking <strong>frontend and full-stack developer</strong> with
-          a passion for building intuitive, people-centered digital experiences. Combines UI/UX
-          design principles with clean, responsive frontend development and modern full-stack
-          architecture to create functional, scalable web solutions. Actively advancing skills in{" "}
-          <strong>React and Next.js</strong> while expanding technical breadth through the
-          Ultimate AWS Certified AI Practitioner course to build scalable, future-ready products.
+          <strong>Full-stack software developer</strong> building with React, Next.js and Flutter,
+          with <strong>AI/ML training</strong> from my Advanced Diploma in Software Engineering
+          (Java, AI/ML) at APTECH. I build AI-powered products with the Claude and Gemini APIs
+          and a Random Forest classifier, and pair them with clean, people-centered design.
+          Currently deepening my skills through the AWS Certified AI Practitioner course.
         </p>
 
         <div className="buttons">
           <a href="#projects" className="btn btn-plum">
             Explore My Work
           </a>
-          <a href="/Jade_Etaduovie_Resume.pdf" className="btn btn-ghost" download>
+          <a href="/Oghenekevwe_Jade_Etaduovie_CV.pdf"
+            className="btn btn-ghost"
+            download="Oghenekevwe_Jade_Etaduovie_CV.pdf"
+          >
             Download Resume
           </a>
         </div>

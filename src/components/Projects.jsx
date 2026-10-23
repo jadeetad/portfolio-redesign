@@ -14,6 +14,13 @@ export default function Projects() {
           tools="Next.js · Drizzle ORM · Better Auth · Upstash Redis · Claude API / Gemini API"
         />
         <ProjectCard
+          tag="Machine Learning"
+          title="RenalSense — Chronic Kidney Disease Risk Classifier"
+          link="https://clear-path-ckd.vercel.app/"
+          description="Machine-learning project that classifies CKD risk into five levels from 42 patient inputs, using a Random Forest model served through a Flask API behind a React interface. An academic project, not a diagnostic tool."
+          tools="React · Flask · scikit-learn · Random Forest"
+        />
+        <ProjectCard
           tag="Live"
           title="SpendWise — AI-Powered Finance Tracker"
           link="https://aura-wallet-beta.vercel.app/"
