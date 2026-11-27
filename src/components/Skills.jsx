@@ -1,9 +1,10 @@
+import SectionTitle from "./SectionTitle";
 import SkillGroup from "./SkillGroup";
 
 export default function Skills() {
   return (
     <section id="skills">
-      <h2 className="section-title">Core Skills</h2>
+      <SectionTitle index="02">Core Skills</SectionTitle>
       <div className="skills-grid">
         <SkillGroup
           title="Full-Stack & Backend"

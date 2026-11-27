@@ -9,7 +9,7 @@ export default function ProjectCard({ tag, title, link, description, tools, feat
       <p className="tools">{tools}</p>
       {link && (
         <span className="project-cta">
-          View project <span className="arrow" aria-hidden="true">↗</span>
+          View project <span className="arrow" aria-hidden="true">→</span>
         </span>
       )}
     </>

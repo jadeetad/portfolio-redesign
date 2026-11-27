@@ -1,7 +1,8 @@
+import SectionTitle from "./SectionTitle";
 export default function Education() {
   return (
     <section id="education">
-      <h2 className="section-title">Education & Certifications</h2>
+      <SectionTitle index="04">Education &amp; Certifications</SectionTitle>
       <div className="edu">
         <div className="edu-item">
           <strong>APTECH Computer Education</strong>
