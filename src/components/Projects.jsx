@@ -1,9 +1,10 @@
+import SectionTitle from "./SectionTitle";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
     <section id="projects">
-      <h2 className="section-title">Selected Projects</h2>
+      <SectionTitle index="03">Selected Projects</SectionTitle>
       <div className="projects-row">
         <ProjectCard
           tag="Featured"

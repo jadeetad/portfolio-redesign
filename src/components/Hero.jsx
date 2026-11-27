@@ -2,25 +2,27 @@ import heroImg from "../assets/Screenshot_20250718-224436.jpg";
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="top">
       <div className="hero-img">
         <div className="frame">
+          <span className="frame-tag">ID / JE-01</span>
           <img src={heroImg} alt="Oghenekevwe Jade Etaduovie" />
         </div>
       </div>
 
       <div className="hero-text">
+        <span className="eyebrow">{"// Portfolio — 2026"}</span>
         <h1>Oghenekevwe Jade Etaduovie</h1>
         <h3>Full-Stack Software Developer · AI/ML · UI/UX Design</h3>
         <div className="contact-line">
           <a href="mailto:jadeetad@jadeetad.com">jadeetad@jadeetad.com</a>
-          <span className="sep">|</span>
+          <span className="sep">/</span>
           <span>08028739017</span>
-          <span className="sep">|</span>
+          <span className="sep">/</span>
           <a href="https://github.com/jadeetad" target="_blank" rel="noreferrer">
             GitHub
           </a>
-          <span className="sep">|</span>
+          <span className="sep">/</span>
           <a
             href="https://www.linkedin.com/in/jade-etaduovie-95445231b"
             target="_blank"
@@ -39,7 +41,7 @@ export default function Hero() {
         </p>
 
         <div className="buttons">
-          <a href="#projects" className="btn btn-plum">
+          <a href="#projects" className="btn btn-solid">
             Explore My Work
           </a>
           <a href="/Oghenekevwe_Jade_Etaduovie_CV.pdf"

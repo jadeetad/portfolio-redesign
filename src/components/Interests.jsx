@@ -1,7 +1,8 @@
+import SectionTitle from "./SectionTitle";
 export default function Interests() {
   return (
     <section id="interests">
-      <h2 className="section-title">Beyond Code</h2>
+      <SectionTitle index="05">Beyond Code</SectionTitle>
       <p className="interests-text">
         When I'm not building digital products, I'm exploring life's creative intersections. I
         read across genres — fiction, self-development, design theory — always seeking fresh
